@@ -8,13 +8,21 @@
 			"file": {
 				"/sys/devices/virtual/thermal/*/*": [
 					"read"
+				],
+				"/sys/class/hwmon/*/pwm*": [
+					"read"
 				]
 			}
 		},
 		"write": {
 			"uci": [
 				"fancontrol"
-			]
+			],
+			"file": {
+				"/sys/class/hwmon/*/pwm*": [
+					"write"
+				]
+			}
 		}
 	}
 }
