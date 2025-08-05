@@ -6,7 +6,7 @@
 				"fancontrol"
 			],
 			"file": {
-				"/sys/devices/virtual/thermal/*/*": [
+				"/sys/class/thermal/*/*": [
 					"read"
 				],
 				"/sys/class/hwmon/*/pwm*": [
