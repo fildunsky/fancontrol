@@ -1,6 +1,6 @@
 {
 	"luci-app-fancontrol": {
-		"description": "Fan General Control",
+		"description": "Fan Control",
 		"read": {
 			"uci": [
 				"fancontrol"

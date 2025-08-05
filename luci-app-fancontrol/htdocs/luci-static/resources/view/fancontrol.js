@@ -14,17 +14,20 @@ return view.extend({
 	render: async function (data) {
 		var m, s, o;
 
-		m = new form.Map('fancontrol', _('Fan General Control'));
+		m = new form.Map('fancontrol', _('Fan Control'));
 		s = m.section(form.TypedSection, 'fancontrol', _('Settings'));
 		s.anonymous = true;
 
-		o = s.option(form.Flag, 'enabled', _('Enabled'), _('Enabled'));
+		// 是否启用
+		o = s.option(form.Flag, 'enabled', _('Enable'), _('Enable'));
+		o.description = '';
 		o.rmempty = false;
 
+		// 温度文件
 		o = s.option(form.Value, 'thermal_file', _('Thermal File'), _('Thermal File'));
-		o.placeholder = '/sys/devices/virtual/thermal/thermal_zone0/temp';
+		// o.placeholder = '/sys/devices/virtual/thermal/thermal_zone0/temp';
 		var temp_div = uci.get('fancontrol', 'settings', 'temp_div');
-		var temp = parseInt(await fs.read_direct(uci.get('fancontrol', 'settings', 'thermal_file')));
+		var temp = parseInt(await fs.read(uci.get('fancontrol', 'settings', 'thermal_file')));
 		if (temp_div > 0 && temp > 0) {
 			o.description = _('Current temperature:') + ' <b>' + (temp / temp_div) + '°C</b>';
 		} else {
@@ -32,8 +35,8 @@ return view.extend({
 		}
 
 		o = s.option(form.Value, 'fan_file', _('Fan File'), _('Fan Speed File'));
-		o.placeholder = '/sys/devices/virtual/thermal/cooling_device0/cur_state';
-		var speed = parseInt(await fs.read_direct(uci.get('fancontrol', 'settings', 'fan_file')));
+		// o.placeholder = '/sys/devices/virtual/thermal/cooling_device0/cur_state';
+		var speed = parseInt(await fs.read(uci.get('fancontrol', 'settings', 'fan_file')));
 		o.description = _('Current speed:') + ' <b>' + (speed) + '</b>';
 
 		o = s.option(form.Value, 'start_speed', _('Initial Speed'), _('Please enter the initial speed for fan startup.'));

@@ -1,20 +1,23 @@
-msgid "Fan General Control"
-msgstr "风扇通用控制小程序"
-
-msgid "Enabled"
-msgstr "是否开启"
+msgid "Fan Control"
+msgstr "风扇控制"
 
 msgid "Settings"
 msgstr "设置"
 
+msgid "Enable"
+msgstr "开启"
+
 msgid "Thermal File"
-msgstr "温度虚拟文件"
+msgstr "温度文件"
+
+msgid "Fan File"
+msgstr "风扇控制"
 
 msgid "Fan Speed File"
 msgstr "风扇速度虚拟文件"
 
 msgid "Initial Speed"
-msgstr "启动初始速度"
+msgstr "初始速度"
 
 msgid "Please enter the initial speed for fan startup."
 msgstr "请输入风扇启动的初始速度。"
