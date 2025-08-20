@@ -1,41 +1,53 @@
 msgid "Fan Control"
 msgstr "风扇控制"
 
+msgid "General Fan Control Settings"
+msgstr "通用风扇控制设置"
+
 msgid "Settings"
 msgstr "设置"
 
-msgid "Enable"
-msgstr "开启"
+msgid "Enabled"
+msgstr "已启用"
 
-msgid "Thermal File"
-msgstr "温度文件"
+msgid "Fan Speed Ajust Reading Path"
+msgstr "风扇速度控制文件读取路径"
 
-msgid "Fan File"
-msgstr "风扇控制"
+msgid Thermal Value Reading Path"
+msgstr "温度文件读取路径"
 
-msgid "Fan Speed File"
-msgstr "风扇速度虚拟文件"
+msgid "Temperature Division"
+msgstr "温度数值除数"
 
-msgid "Initial Speed"
-msgstr "初始速度"
+msgid "Silent"
+msgstr "静音"
 
-msgid "Please enter the initial speed for fan startup."
-msgstr "请输入风扇启动的初始速度。"
+msgid "Balance"
+msgstr "平衡"
 
-msgid "Max Speed"
-msgstr "最大速度"
+msgid "Performance"
+msgstr "性能"
 
-msgid "Please enter maximum fan speed."
-msgstr "请输入风扇最大速度"
+msgid "Berserk"
+msgstr "狂暴"
 
-msgid "Start Temperature"
-msgstr "启动温度"
+msgid "Maximum Speed"
+msgstr "最大转速"
 
-msgid "Please enter the fan start temperature."
-msgstr "请输入风扇启动温度。"
+msgid "Disabled"
+msgstr "禁用"
 
-msgid "Current speed:"
-msgstr "当前速度："
+msgid "PWM Fan Type"
+msgstr "风扇最大转速"
 
-msgid "Current temperature:"
-msgstr "当前温度："
+msgid "RUNNING"
+msgstr "运行中"
+
+msgid "Fan Speed"
+msgstr "风扇转速"
+
+msgid "Current Temperature"
+msgstr "当前温度"
+
+msgid "NOT RUNNING"
+msgstr "未运行"

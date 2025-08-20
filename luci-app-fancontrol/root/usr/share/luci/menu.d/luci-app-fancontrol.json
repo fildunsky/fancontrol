@@ -1,5 +1,5 @@
 {
-	"admin/services/fancontrol": {
+	"admin/system/fancontrol": {
 		"title": "Fan Control",
 		"order": 90,
 		"action": {
