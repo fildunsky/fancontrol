@@ -28,9 +28,9 @@ start_service() {
     config_get max_speed settings max_speed
     config_get temp_div settings temp_div
 
-    [ "$start_temp" = "-1" ] && start_speed=80 && start_temp=25
+    [ "$start_temp" = "-1" ] && start_speed=100 && start_temp=25
 
-    [ "$start_temp" = "-2" ] && start_speed=$max_speed && && start_temp=0
+    [ "$start_temp" = "-2" ] && start_speed=$max_speed && start_temp=0
 
     procd_open_instance
     procd_set_param command $PROG
