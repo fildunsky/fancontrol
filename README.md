@@ -6,7 +6,7 @@ Openwrt简易通用风扇控制，最早是给GL-AXT1800使用，原理是读取
 
 1. Add new feed:
     ```bash
-    echo "src-git fancontrol https://github.com/JiaY-shi/fancontrol.git" >> "feeds.conf"
+    echo "src-git fancontrol https://github.com/GFuZan/fancontrol.git;1.0" >> "feeds.conf"
     ```
 2. Pull upstream commits:
     ```bash
@@ -19,3 +19,4 @@ Openwrt简易通用风扇控制，最早是给GL-AXT1800使用，原理是读取
     ```
 ## 预览
 ![图片](./images/1.png)
+![图片](./images/2.png)
