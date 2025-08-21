@@ -13,7 +13,10 @@ msgstr "已启用"
 msgid "Fan Speed Ajust Reading Path"
 msgstr "风扇速度控制文件读取路径"
 
-msgid Thermal Value Reading Path"
+msgid "Fan Speed Mode"
+msgstr "风扇速度模式"
+
+msgid "Thermal Value Reading Path"
 msgstr "温度文件读取路径"
 
 msgid "Temperature Division"
