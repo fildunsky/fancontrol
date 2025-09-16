@@ -1,5 +1,5 @@
 msgid "Fan Control"
-msgstr "Управление вентилятором"
+msgstr "Охлаждение"
 
 msgid "Settings"
 msgstr "Настройки"
